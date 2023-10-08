@@ -2,7 +2,6 @@
 #include <cstdlib>
 using namespace std;
 
-
 void write_gender_word(char friend_gender)
 {
     if (friend_gender == 'm' or friend_gender == 'M')
@@ -14,7 +13,6 @@ void write_gender_word(char friend_gender)
         cout << "her ";
     }
 }
-
 
 void write_age_phrase(int friend_age)
 {
@@ -32,7 +30,6 @@ void write_age_phrase(int friend_age)
     }
 }
 
-
 void write_letter(string first_name, string friend_name, char friend_gender, int friend_age, string user_name)
 {
     cout << "\nDear, " << first_name << ". \nIs everything all right with you? \nI hope yes, miss you!\n"
@@ -47,14 +44,12 @@ void write_letter(string first_name, string friend_name, char friend_gender, int
     cout << "\nSee you soon, my friend. \nBye! \n\nYours sincerely, " << user_name << "...\n";
 }
 
-
 void make_angry_exit()
 {
     cout << "\nStop playing around, you moron! No more letters for you!\n";
 
     exit(0);
 }
-
 
 void check_gender(char friend_gender)
 {
@@ -64,7 +59,6 @@ void check_gender(char friend_gender)
     }
 }
 
-
 void check_age(int friend_age)
 {
     if (friend_age < 0 or friend_age > 110)
@@ -72,7 +66,6 @@ void check_age(int friend_age)
         make_angry_exit();
     }
 }
-
 
 int main()
 {
