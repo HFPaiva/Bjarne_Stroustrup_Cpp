@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
 
-
 double convert_distance(double miles)
 {
     return miles * 1609;
 }
-
 
 int main()
 {
